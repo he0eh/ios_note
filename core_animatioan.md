@@ -1,6 +1,8 @@
 #Core Animatioan
 ======
 ## 1、View自身修改属性
+	通过修改位置、透明度、旋转等来制造动画效果
+	
 	frame	大小以及位置
 	transform	缩放和旋转
 	alpha	透明度
@@ -97,6 +99,7 @@
 					 completion:(void (^)(BOOL finished))completion; // toView added to fromView.superview, fromView removed from its superview
 
 ##3、Dynamic Animation （IOS 7）
+	封装好的模拟自然的动画，可以模拟某些物理现象，如重力下跌，摩擦力，回弹等等
 	Behavior //行为
 		UIGravityBehavior //重力 
 			angle //重力方向，默认向下（可任意设置方向）
